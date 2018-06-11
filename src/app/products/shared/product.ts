@@ -1,3 +1,4 @@
+
 export class Product {
     name:string;
     code:string;
