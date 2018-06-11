@@ -6,5 +6,4 @@ export class Product {
     category:string;
     purchaseRate:number;
     salesRate:number;
-
 }
