@@ -1,0 +1,42 @@
+<form #f="ngForm">
+  <div class="form-group">
+    <label for="name"  >Name</label>
+    <input type="text" 
+    class="form-control" [(ngModel)]="product.name" name="name"
+    id="name">
+  </div>
+  <div class="form-group">
+    <label for="code">Code</label>
+    <input type="text" 
+    class="form-control" 
+    id="code"  [ngModel] = "product.code" name="code" >
+  </div>
+  <div class="form-group">
+    <label for="description">Decsription</label>
+    <input type="text" 
+    class="form-control" 
+    id="description" [ngModel] = "product.description" name ="description">
+  </div>
+  <div class="form-group">
+    <label for="category">Category</label>
+    <input type="text" 
+    class="form-control" 
+    id="category" [ngModel] = "product.category" name="category" >
+  </div>
+  <div class="form-group">
+    <label for="purchaseRate">Purchase Rate</label>
+    <input type="text" 
+    class="form-control" 
+    id="purchaseRate" [ngModel] = "product.purchaseRate" name="purchaseRate" >
+  </div>
+  <div class="form-group">
+    <label for="salesRate">Sales Rate</label>
+    <input type="text" 
+    class="form-control" 
+    id="salesRate" [ngModel] = "product.salesRate" name = "salesRate" >
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary"  (click) ="saveProduct()" >Save changes</button>
+  </div>
+</form>
