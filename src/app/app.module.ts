@@ -9,13 +9,12 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { ProductModelComponent } from './products/product-model/product-model.component';
 import { ProductEditorComponent } from './products/product-editor/product-editor.component';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule }     from './app-route.module';
+import { AppRoutingModule } from './app-route.module';
 
 
 
 @NgModule({
   declarations: [
-    AppRoutingModule,
     AppComponent,
     ProductsComponent,
     ProductListComponent,
@@ -25,7 +24,8 @@ import { AppRoutingModule }     from './app-route.module';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
