@@ -9,16 +9,18 @@ import { NgForm } from '@angular/forms/src/directives/ng_form';
   styleUrls: ['./product-editor.component.css']
 })
 export class ProductEditorComponent implements OnInit {
+  
   product = new Product();
+  displaySuccessMessage = false;
+  displayErrorMessage = false;
+
   constructor() { 
-    this.product.name = "Bijith"
   }
 
   ngOnInit() {    
   }
 
   saveProduct(form:NgForm){
-    this.product.name = "saved"
   }
 
 }

@@ -14,14 +14,22 @@
           <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" 
+          href="#" id="navbarDropdown" 
+          role="button" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" aria-expanded="false">
             Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!--
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
+            <a routerLink="/Dashboard" class="dropdown-item" >Dashboard</a>
+            -->
+              <a routerLink="/Products" class="dropdown-item" >Products</a>
           </div>
         </li>
         <li class="nav-item">
@@ -30,8 +38,8 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
-      <app-products></app-products>
+  <div>
+      <router-outlet></router-outlet>
   </div>
 
 
