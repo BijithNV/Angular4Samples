@@ -4,7 +4,9 @@
         <h2>Products</h2>
     </div>
   <div class="col-lg-10" >
-    <label class="status-message"></label>
+      <div *ngIf="messageService.messages.length">
+            <div *ngFor='let message of messageService.messages'> {{message}} </div>
+      </div>
   </div>
   <div class="col-lg-2 justify-content-end">
     <button class="btn-success" data-toggle="modal" data-target="#exampleModalCenter" >Add New Product</button>

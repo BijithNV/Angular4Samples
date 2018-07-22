@@ -10,6 +10,7 @@ import { ProductModelComponent } from './products/product-model/product-model.co
 import { ProductEditorComponent } from './products/product-editor/product-editor.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-route.module';
+import { MessagingService } from './messaging.service';
 
 
 
@@ -27,7 +28,7 @@ import { AppRoutingModule } from './app-route.module';
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [MessagingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
