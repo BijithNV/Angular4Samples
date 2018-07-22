@@ -8,10 +8,11 @@ import { ProductsComponent } from './products/products.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductModelComponent } from './products/product-model/product-model.component';
 import { ProductEditorComponent } from './products/product-editor/product-editor.component';
+import { HomeComponent } from './home/home.component';
 
 const routes:Routes=[
-  { path: '', redirectTo: '/Dashboard', pathMatch: 'full' },
-  { path: 'Dashboard', component: AppComponent },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
+  { path: 'Home', component: HomeComponent },
   { path: 'Products', component: ProductListComponent }
 ]
 
@@ -21,7 +22,8 @@ const routes:Routes=[
     ProductsComponent,
     ProductListComponent,
     ProductModelComponent,
-    ProductEditorComponent
+    ProductEditorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
