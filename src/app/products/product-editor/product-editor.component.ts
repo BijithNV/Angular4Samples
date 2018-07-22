@@ -3,8 +3,6 @@ import {Product} from '../shared/product';
 import { ProductsComponent } from '../products.component';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { MessagingService } from '../../messaging.service';
-import { ActivatedRoute } from '@angular/router/src/router_state';
-import { Router } from '@angular/router/src/router';
 
 @Component({
   selector: 'app-product-editor',
@@ -16,10 +14,7 @@ export class ProductEditorComponent implements OnInit {
   displaySuccessMessage = false;
   displayErrorMessage = false;
 
-  constructor(private messageService:MessagingService,
-  private route:ActivatedRoute,
-  private router:Router
-  ) { 
+  constructor(private messageService:MessagingService) { 
   }
 
   ngOnInit() {    
@@ -27,7 +22,6 @@ export class ProductEditorComponent implements OnInit {
 
   saveProduct(form:NgForm){
    this.messageService.add("Product saved successfuly!!!");
-   this.router.navigate(['/heroes']);
   }
 
 }
