@@ -27,10 +27,8 @@ const routes:Routes=[
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(routes)
+    FormsModule
   ],
-  exports:[RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
