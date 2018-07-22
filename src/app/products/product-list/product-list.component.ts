@@ -8,9 +8,13 @@ import { MessagingService } from '../../messaging.service';
 })
 export class ProductListComponent implements OnInit {
 
-  constructor(public messagingService:MessagingService) { }
+  messages:string[]=[];
+
+  constructor(public messagingService:MessagingService) { debugger }
 
   ngOnInit() {
+    debugger
+    this.messages = this.messagingService.messages;
   }
 
 }
