@@ -6,15 +6,16 @@ import { MessagingService } from '../../messaging.service';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
+
+
+
 export class ProductListComponent implements OnInit {
 
-  messages:string[]=[];
-
-  constructor(public messagingService:MessagingService) { debugger }
+  message:string = "";
+  constructor(public messagingService:MessagingService) { }
 
   ngOnInit() {
-    debugger
-    this.messages = this.messagingService.messages;
+    this.message = this.messagingService.messages[0];
   }
 
 }
