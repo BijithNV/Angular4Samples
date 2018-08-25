@@ -15,7 +15,17 @@ export class ProductListComponent implements OnInit {
   constructor(public messagingService:MessagingService) { }
 
   ngOnInit() {
-    this.message = this.messagingService.messages[0];
   }
+
+  displayMessage(message:string){
+
+    this.message = message;
+    setTimeout(()=>{
+      this.message = "";
+ }, 3000);
+    
+
+  }
+
 
 }

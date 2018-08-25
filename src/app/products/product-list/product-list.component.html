@@ -4,7 +4,7 @@
         <h2>Products</h2>
     </div>
   <div class="col-lg-10" >
-      <div >{{message}}</div>
+      <div class="alert alert-success" role="alert" *ngIf="message" >{{message}}</div>
   </div>
   <div class="col-lg-2 justify-content-end">
     <button class="btn-success" data-toggle="modal" data-target="#exampleModalCenter" >Add New Product</button>
@@ -63,8 +63,8 @@
           </button>
         </div>
         <div class="modal-body">
-          <app-product-editor></app-product-editor>
-        </div>
+          <app-product-editor (message)="displayMessage($event)"></app-product-editor>
+        </div> 
         
       </div>
     </div>
