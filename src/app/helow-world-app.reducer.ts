@@ -1,2 +1,5 @@
-export class HelowWorldApp.Reducer.Ts {
-}
+import{ Action } from '@ngrx/store';
+
+// export interface AppState{
+//     products:Array<product
+// }
